@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>  
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">  
+	<title>Skim RCT</title>
+</head>  
+<body>
+
+	<div style="padding-left: 2.5em;">
+		<h1>Skim RCT</h1>
+		<p>Please enter your RCT Abstract below</p>
+		<br>
+	</div>
+
+	<div class="textAreaColumn">
+		<div>
+			<form action="{{url_for('req_predict')}}" method="post" id="user_form">
+				<div>
+						<textarea name="abstract" id="abstract" form="user_form" rows="30" cols="54" placeholder="Enter your abstract here" required>{{old_text}}</textarea><br><br>
+				</div>
+				<div>
+					<button type="submit">Beautify</button>
+				</div>
+			</form>
+		</div>
+		
+		<div>
+			<div>
+				<textarea rows="30" cols="54" placeholder="Your converted text will appear here" >{{ pred }}</textarea>
+			</div>
+		</div>
+	</div>
+</body>  
+</html>
