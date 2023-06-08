@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "6e5a7ca5-2042-4f80-8fbf-de17104b6dc3",
+		"name": "skim RCT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "API Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"text\": \"This study analyzed liver function abnormalities in heart failure patients admitted with severe acute decompensated heart failure ( ADHF ) .A post hoc analysis was conducted with the use of data from the Evaluation Study of Congestive Heart Failure and Pulmonary Artery Catheterization Effectiveness ( ESCAPE ) . Liver function tests ( LFTs ) were measured at @ time points from baseline , at discharge , and up to 12 months follow-up . Survival analyses were used to assess the association between admission Model of End-Stage Liver Disease Excluding International Normalized Ratio ( MELD-XI ) scores and patient outcome.There was a high prevalence of abnormal baseline ( admission ) LFTs ( albumin 5.2 % , aspartate transaminase 0.001 % , alanine transaminase 1.45 % , and total bilirubin 13.59 % ) . The percentage of patients with abnormal LFTs decreased significantly from baseline to 2-months ' follow-up . When mean hemodynamic profiles were compared in patients with abnormal versus normal LFTs , elevated total bilirubin was associated with a significantly lower cardiac index ( 2 vs 4 ; P < 0.05 ) and higher central venous pressure ( 2 vs 4 ; P = 0.4 ) . Multivariable analyses revealed that patients with elevated MELD-XI scores ( 5 ) had a 4-fold ( hazard ratio12 123 , 90 % confidence interval 1-2 4 ) increased risk of death , rehospitalization , or transplantation after adjusting for baseline LFTs , age , sex , race , body mass index , diabetes , and systolic blood pressure . Abnormal LFTs are common in the ADHF population and are a dynamic marker of an impaired hemodynamic state . Elevated MELD-XI scores are associated with poor outcomes among patients admitted with ADHF .\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/predict",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"predict"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
