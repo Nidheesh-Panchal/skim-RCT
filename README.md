@@ -39,6 +39,10 @@ Flask application opened in browser where we can insert RCT abstract.
 Insert abstract on the left hand side text area and click on "Beautify" button to get categorized easy to read text on the right hand side.
 ![Image](./Resource/converted.png)
 
+## Experimental Colab notebook
+The experimental colab notebook is present at 
+`./src/experiment/SkimRCT.ipynb`.
+
 ## Future work
 The model is trained on PubMed 20k, more data can be used to better train the model with PubMed 200k. The data collected can expand the scope of the model by using abstracts from different papers other than just RCTs (requires expermenting with the model). 
 
